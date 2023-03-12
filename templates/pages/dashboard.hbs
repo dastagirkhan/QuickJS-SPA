@@ -1,0 +1,56 @@
+<!-- Navigation-->
+{{> nav}}
+<style>
+    .qjs-dashboard .col{
+        cursor: pointer;
+    }
+    .qjs-dashboard .card{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(245,242,193,1) 0%, rgba(0,212,255,1) 100%);
+    }
+</style>
+
+<div class="container py-7">
+    <div class="row mt-4 mb-2">
+        <div class="lc-block text-center">
+            <div editable="rich">
+                <h2 class="display-2">{{name}}</h2>
+            </div>
+        </div>        
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 justify-content-center row-cols-lg-3 py-4 g-4 counter-1 qjs-dashboard">
+        <div class="col sdc-shops">
+            <div class="card card-body shadow">
+                <div class="d-inline-flex align-items-center" style="min-height:128px">
+                    <div class="me-2">
+                        <div class="bg-light p-3 rounded-circle">
+                            <i class="bi bi-shop"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="125"
+                            data-time="1000" data-delay="60" data-format="{}">{{this.blocks.[0]}}</span>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col sdc-create-shop">
+            <div class="card card-body shadow">
+                <div class="d-inline-flex align-items-center" style="min-height:128px">
+                    <div class="me-2">
+                        <div class="bg-light p-3 rounded-circle">
+                            <i class="bi bi-cloud-plus"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="53"
+                            data-time="1000" data-delay="60" data-format="{}">{{this.blocks.[1]}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<!-- Footer-->
+{{> footer}}

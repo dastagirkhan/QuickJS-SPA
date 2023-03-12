@@ -1,0 +1,52 @@
+<style media="screen">
+  #main {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #mainNav {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://wordpress.accima.info/wp-content/uploads/2021/04/cropped-image-HDn%C2%B05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+  }
+  #menu-menu-1 li a {
+    color:#000!important;
+  }
+  
+  #menu-menu-1 li a:hover {
+    color:#000!important;
+  }
+
+  @media (min-width: 768px) {
+    /* CSS */
+  }
+
+  @media (min-width: 320px) and (max-width:767px) {}
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark"
+  style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,232,244,1) 0%, rgba(218,239,200,1) 11%, rgba(0,212,255,1) 100%);">
+  <div class="container">
+    <a class="navbar-brand" href="/#" width="30" height="30"
+        class="d-inline-block align-top" alt=""> <span editable="inline"><img width="50" src="/img/logo.png"></span> </a> <button
+      class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar1"
+      aria-controls="myNavbar1" aria-expanded="false" aria-label="Toggle navigation"> <span
+        class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="myNavbar1">
+      <div lc-helper="shortcode" class="live-shortcode me-auto"> <!--  lc_nav_menu -->
+        <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
+          <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"><a
+              href="/#" class="nav-link ">Dashboard</a></li> 
+          <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"><a
+              href="/#/logout" class="nav-link ">Logout</a></li>
+        </ul> <!-- /lc_nav_menu -->
+      </div>
+      {{!-- <div class="lc-block">
+        <a class="navbar-text" href="https://wa.me/011234567890?text=I'm%20interested%20in%20your%20offer">Logout!</a>
+      </div> --}}
+    </div>
+  </div>
+</nav>

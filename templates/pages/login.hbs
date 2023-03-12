@@ -1,0 +1,72 @@
+<style media="screen">
+  .login-container{  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+  }
+  .login-logo{
+    position: relative;
+    margin-left: -41.5%;
+  }
+  .login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+  }  
+  .login-form-2{
+    padding: 9%;
+    background: #fffff;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .login-form-2 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color: #fff;
+  }
+  .btnSubmit{
+    font-weight: 500;
+    width: 100%;
+    color: #fff;
+  }
+  .btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+  }
+  .row {
+    min-height: 100vh;
+  }
+  input[type="checkbox"]:focus{
+        outline:0!important;
+  }
+</style>
+
+<div class="container-fluid login-container">
+    <div class="row">        
+        <div class="col-md-12 login-form-2">
+            <span style="font-size:12px;letter-spacing:.4em;display:inline-block;">QUICKJS SPA - QUICK SAMPLE</span>
+            <br>
+            <span style="font-weight:600;">CONNECT</span>
+            <form style="margin-top:1em;" id="login_form">
+                <div class="mb-3">
+                    <label for="login" style="font-size:11px;">Your Email</label>
+                    <input type="email" name="email" id="login" class="form-control input_field" style="font-size:12px;background-color:#E5E5E5" placeholder="email*" value="admin@quickjsspa.demo" required/>
+                </div>
+                <div class="mb-3">
+                    <label for="password" style="font-size:11px;position:relative;width:100%;">Your Password <span id="forgot_password" class="forgot_password" style="display: inline-block;position:absolute;right:0;">Forgot password ?</span></label>
+                    <input type="password" id="password" name="password" class="form-control input_field" style="font-size:12px;background-color:#E5E5E5" placeholder="mot de passe*" value="password" required />
+                </div>                
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-lg btn-dark login-button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

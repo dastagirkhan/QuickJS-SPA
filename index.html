@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- general meta info -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QJS">  
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="">
+  <meta http-equiv="pragma" content="no-cache">
+
+  <title>QUICKJS - SPA</title>
+  
+  <link rel="icon" type="image/x-icon" href="/img/icon.png">
+  <link rel="stylesheet" href="/css/vendors/bootstrap/bootstrap.min.css">  
+  <link rel="stylesheet" href="/css/vendors/nprogress/nprogress.min.css">  
+  <link href="/css/vendors/font/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/js/vendors/ladda/ladda.min.css">  
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>  
+  <div id="app-body"></div>
+  <script src="/js/vendors/loadjs/loadjs.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/jquery/jquery.min.js" charset="utf-8"></script>  
+  <script src="/js/vendors/bootstrap/popper.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/bootstrap/bootstrap.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/nprogress/nprogress.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/sweetalert/sweetalert.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/handlebars/handlebars.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/handlebars/handlebars-helpers.js" charset="utf-8"></script>
+  <script src="/js/vendors/rlite/rlite.min.js" charset="utf-8"></script>  
+  <script src="/js/vendors/populatejs/populatejs.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/ladda/spin.min.js" charset="utf-8"></script>
+  <script src="/js/vendors/ladda/ladda.min.js" charset="utf-8"></script>
+  <script src="/js/env.js?v=20230311_3"></script>
+  <script type="text/javascript">     
+  (function(){      
+     loadjs(['/js/app.js?v='+ENV.version],function(){
+      loadjs(['/js/app.routes.js?v='+ENV.version],function(){
+        window.document.dispatchEvent(new Event("DOMContentLoaded", {
+            bubbles: true,
+            cancelable: true
+        }));
+      });
+     });
+  })();
+  </script>
+</body>
+</html>
